@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+    <div class="container">
+        <form action="/new" method="post">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Book Title</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Book Title" name="title">
+                <label for="exampleFormControlInput1" class="form-label">Author</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Author" name="author">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label">My Notes</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="notes"></textarea>
+                <label for="exampleFormControlInput1" class="form-label">Date Read</label>
+                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Date" name="date">
+                <label for="exampleFormControlInput1" class="form-label">ISBN</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="ISBN" name="isbn">
+                <label for="exampleFormControlInput1" class="form-label">Rating</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Rating" name="rating">
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<%- include("partials/footer") %>
